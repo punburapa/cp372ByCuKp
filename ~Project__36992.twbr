@@ -1,0 +1,1678 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Main (Preped) (Absenteeism_at_work)' inline='true' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Absenteeism_at_work' name='excel-direct.1jgbbyv0vuj2571c77gl20ruwxx7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Education/SWU/DA/Project/Absenteeism_at_work.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1jgbbyv0vuj2571c77gl20ruwxx7' name='Main (Preped)' table='[&apos;Main (Preped)$&apos;]' type='table'>
+          <columns gridOrigin='A1:AA741:no:A1:AA741:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='Reason for absence' ordinal='1' />
+            <column datatype='string' name='Reason.Reason for absence_name' ordinal='2' />
+            <column datatype='integer' name='Month of absence' ordinal='3' />
+            <column datatype='string' name='Month.Column2' ordinal='4' />
+            <column datatype='integer' name='Day of the week' ordinal='5' />
+            <column datatype='string' name='Day in a Week.Day of the week_name' ordinal='6' />
+            <column datatype='integer' name='Seasons' ordinal='7' />
+            <column datatype='string' name='Season.Seasons_name' ordinal='8' />
+            <column datatype='integer' name='Transportation expense' ordinal='9' />
+            <column datatype='integer' name='Distance from Residence to Work' ordinal='10' />
+            <column datatype='integer' name='Service time' ordinal='11' />
+            <column datatype='integer' name='Age' ordinal='12' />
+            <column datatype='integer' name='Age entered company' ordinal='13' />
+            <column datatype='integer' name='Work load Average/day' ordinal='14' />
+            <column datatype='integer' name='Hit target' ordinal='15' />
+            <column datatype='integer' name='Disciplinary failure' ordinal='16' />
+            <column datatype='integer' name='Education' ordinal='17' />
+            <column datatype='integer' name='Son' ordinal='18' />
+            <column datatype='integer' name='Social drinker' ordinal='19' />
+            <column datatype='integer' name='Social smoker' ordinal='20' />
+            <column datatype='integer' name='Level of dug addiction' ordinal='21' />
+            <column datatype='integer' name='Pet' ordinal='22' />
+            <column datatype='integer' name='Weight' ordinal='23' />
+            <column datatype='integer' name='Height' ordinal='24' />
+            <column datatype='integer' name='Body mass index' ordinal='25' />
+            <column datatype='integer' name='Absenteeism time in hours' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA741:no:A1:AA741:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reason for absence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reason for absence]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Reason for absence</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reason.Reason for absence_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reason.Reason for absence_name]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Reason.Reason for absence_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month of absence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month of absence]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Month of absence</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month.Column2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month.Column2]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Month.Column2</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day of the week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day of the week]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Day of the week</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day in a Week.Day of the week_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Day in a Week.Day of the week_name]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Day in a Week.Day of the week_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seasons</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Seasons]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Seasons</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season.Seasons_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Season.Seasons_name]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Season.Seasons_name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transportation expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transportation expense]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Transportation expense</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance from Residence to Work</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Distance from Residence to Work]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Distance from Residence to Work</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Service time]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Service time</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age entered company</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age entered company]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Age entered company</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work load Average/day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Work load Average/day]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Work load Average/day</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hit target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hit target]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Hit target</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disciplinary failure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Disciplinary failure]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Disciplinary failure</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Son</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Son]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Son</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Social drinker</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Social drinker]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Social drinker</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Social smoker</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Social smoker]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Social smoker</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Level of dug addiction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Level of dug addiction]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Level of dug addiction</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pet]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Pet</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Height]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Body mass index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Body mass index]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Body mass index</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Absenteeism time in hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Absenteeism time in hours]</local-name>
+            <parent-name>[Main (Preped)]</parent-name>
+            <remote-alias>Absenteeism time in hours</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='3.45' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Body mass index (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Body mass index]' peg='0' size='2.37' />
+      </column>
+      <column datatype='integer' name='[Body mass index]' role='measure' type='quantitative' />
+      <column caption='Day in a Week' datatype='string' name='[Day in a Week.Day of the week_name]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Distance from Residence to Work (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Distance from Residence to Work]' peg='0' size='4.95' />
+      </column>
+      <column datatype='integer' name='[Distance from Residence to Work]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Reason' datatype='string' name='[Reason.Reason for absence_name]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' name='[Season.Seasons_name]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Work load Average/day (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[Work load Average/day]' peg='0' size='15320' />
+      </column>
+      <column datatype='integer' name='[Work load Average/day]' role='measure' type='quantitative' />
+      <column caption='Main (Preped)' datatype='table' name='[__tableau_internal_object_id__].[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0p9ldmb0oe2z521cmtf0g1gxoejv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/20/2025 04:02:34 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reason for absence</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Reason for absence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reason for absence</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reason.Reason for absence_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reason.Reason for absence_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reason.Reason for absence_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month of absence</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month of absence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month of absence</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month.Column2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month.Column2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month.Column2</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day of the week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day of the week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day of the week</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day in a Week.Day of the week_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day in a Week.Day of the week_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day in a Week.Day of the week_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seasons</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Seasons]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seasons</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season.Seasons_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Season.Seasons_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Season.Seasons_name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transportation expense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Transportation expense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transportation expense</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Distance from Residence to Work</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Distance from Residence to Work]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Distance from Residence to Work</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Service time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Service time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Service time</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age entered company</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age entered company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age entered company</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Work load Average/day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Work load Average/day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Work load Average/day</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hit target</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hit target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hit target</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disciplinary failure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Disciplinary failure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disciplinary failure</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Son</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Son]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Son</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Social drinker</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Social drinker]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Social drinker</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Social smoker</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Social smoker]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Social smoker</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Level of dug addiction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Level of dug addiction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Level of dug addiction</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pet</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pet</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weight</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Weight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weight</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Height</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Height</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Body mass index</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Body mass index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Body mass index</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Absenteeism time in hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Absenteeism time in hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Absenteeism time in hours</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Main (Preped)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Thailand&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Main (Preped)' id='Main (Preped)_BF024FF791F94C939E3A3426DFDA46D7'>
+            <properties context=''>
+              <relation connection='excel-direct.1jgbbyv0vuj2571c77gl20ruwxx7' name='Main (Preped)' table='[&apos;Main (Preped)$&apos;]' type='table'>
+                <columns gridOrigin='A1:AA741:no:A1:AA741:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='Reason for absence' ordinal='1' />
+                  <column datatype='string' name='Reason.Reason for absence_name' ordinal='2' />
+                  <column datatype='integer' name='Month of absence' ordinal='3' />
+                  <column datatype='string' name='Month.Column2' ordinal='4' />
+                  <column datatype='integer' name='Day of the week' ordinal='5' />
+                  <column datatype='string' name='Day in a Week.Day of the week_name' ordinal='6' />
+                  <column datatype='integer' name='Seasons' ordinal='7' />
+                  <column datatype='string' name='Season.Seasons_name' ordinal='8' />
+                  <column datatype='integer' name='Transportation expense' ordinal='9' />
+                  <column datatype='integer' name='Distance from Residence to Work' ordinal='10' />
+                  <column datatype='integer' name='Service time' ordinal='11' />
+                  <column datatype='integer' name='Age' ordinal='12' />
+                  <column datatype='integer' name='Age entered company' ordinal='13' />
+                  <column datatype='integer' name='Work load Average/day' ordinal='14' />
+                  <column datatype='integer' name='Hit target' ordinal='15' />
+                  <column datatype='integer' name='Disciplinary failure' ordinal='16' />
+                  <column datatype='integer' name='Education' ordinal='17' />
+                  <column datatype='integer' name='Son' ordinal='18' />
+                  <column datatype='integer' name='Social drinker' ordinal='19' />
+                  <column datatype='integer' name='Social smoker' ordinal='20' />
+                  <column datatype='integer' name='Level of dug addiction' ordinal='21' />
+                  <column datatype='integer' name='Pet' ordinal='22' />
+                  <column datatype='integer' name='Weight' ordinal='23' />
+                  <column datatype='integer' name='Height' ordinal='24' />
+                  <column datatype='integer' name='Body mass index' ordinal='25' />
+                  <column datatype='integer' name='Absenteeism time in hours' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='3.45' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Age]' derivation='Count' name='[cnt:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='None' name='[none:ID:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]'>
+            <groupfilter function='level-members' level='[none:ID:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Age:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{9F1FB95D-8E64-433A-BB81-65C046E1EED6}' />
+    </worksheet>
+    <worksheet name='BMI Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column aggregation='None' datatype='integer' name='[Body mass index (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Body mass index]' peg='0' size='2.37' />
+            </column>
+            <column datatype='integer' name='[Body mass index]' role='measure' type='quantitative' />
+            <column-instance column='[Body mass index]' derivation='Count' name='[cnt:Body mass index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Body mass index (bin)]' derivation='None' name='[none:Body mass index (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Body mass index:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Body mass index (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[Body mass index (bin)]</column>
+        </show-full-range>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Obese Start from here</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='31.546746744345441'>
+                  <node-reference>
+                    <axis>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Body mass index (bin):qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='46.597014925373145'>
+                  <node-reference>
+                    <axis>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Body mass index:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='157' y='-463' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{8FD7FAD5-434D-4E43-95EC-C2FA63390A49}' />
+    </worksheet>
+    <worksheet name='Distance Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column aggregation='None' datatype='integer' name='[Distance from Residence to Work (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Distance from Residence to Work]' peg='0' size='4.95' />
+            </column>
+            <column datatype='integer' name='[Distance from Residence to Work]' role='measure' type='quantitative' />
+            <column-instance column='[Distance from Residence to Work]' derivation='Count' name='[cnt:Distance from Residence to Work:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Distance from Residence to Work (bin)]' derivation='None' name='[none:Distance from Residence to Work (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Distance from Residence to Work:qk]' value='60' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Distance from Residence to Work:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Distance from Residence to Work (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[Distance from Residence to Work (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{66979EA9-1A05-44EF-9CB1-E580B6A08285}' />
+    </worksheet>
+    <worksheet name='Most Absence Employee'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='None' name='[none:ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[pcto:cnt:ID:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:ID:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:ID:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:ID:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>ID: </run>
+              <run bold='true'><![CDATA[<[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>จำนวนครั้งที่ลา: </run>
+              <run bold='true'><![CDATA[<[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:ID:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:ID:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:ID:qk]</field>
+                      <field>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>113</value>
+                    <value>3</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='302' y='37' />
+          </annotation>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>Can be </run>
+              <run bold='true'>bias</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>พนักงานเบอร์ 3 อาจจะสมัครงานมาก่อน</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>พนักงานเบอร์ 4 อาจจะพึ่งสมัครงานมา จึงมีประวัติลาแค่ 1 ครั้ง</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.287868'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>1</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='72.415204678362571'>
+                  <node-reference>
+                    <axis>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:ID:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.600411'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>7</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='54.757309941520468'>
+                  <node-reference>
+                    <axis>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:ID:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{A4A44CAE-B208-47A3-98A6-EB7AAD1560CB}' />
+    </worksheet>
+    <worksheet name='Most Absence Season'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column caption='Season' datatype='string' name='[Season.Seasons_name]' role='dimension' type='nominal' />
+            <column-instance column='[Season.Seasons_name]' derivation='Count' name='[cnt:Season.Seasons_name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season.Seasons_name]' derivation='None' name='[none:Season.Seasons_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Season.Seasons_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Season.Seasons_name:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Season.Seasons_name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Season.Seasons_name:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Season.Seasons_name:nk]</cols>
+      </table>
+      <simple-id uuid='{DC05217B-2D05-47CA-B81E-65D148153B7B}' />
+    </worksheet>
+    <worksheet name='Most Absence day'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column caption='Day in a Week' datatype='string' name='[Day in a Week.Day of the week_name]' role='dimension' type='nominal' />
+            <column-instance column='[Day in a Week.Day of the week_name]' derivation='Count' name='[cnt:Day in a Week.Day of the week_name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day in a Week.Day of the week_name]' derivation='None' name='[none:Day in a Week.Day of the week_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Day in a Week.Day of the week_name]' derivation='Count' name='[pcto:cnt:Day in a Week.Day of the week_name:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Day in a Week.Day of the week_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Day in a Week.Day of the week_name:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:Day in a Week.Day of the week_name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:Day in a Week.Day of the week_name:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Day in a Week.Day of the week_name:nk]</cols>
+      </table>
+      <simple-id uuid='{887031EC-84D0-44DA-8F23-8634319755AD}' />
+    </worksheet>
+    <worksheet name='Most Absence month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column datatype='string' name='[Month.Column2]' role='dimension' type='nominal' />
+            <column-instance column='[Month.Column2]' derivation='Count' name='[cnt:Month.Column2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month.Column2]' derivation='None' name='[none:Month.Column2:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Month.Column2:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Month.Column2:nk]</cols>
+      </table>
+      <simple-id uuid='{237C3EDD-7A80-4924-9F58-9A35346655ED}' />
+    </worksheet>
+    <worksheet name='Most Reason for Absence'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column caption='Reason' datatype='string' name='[Reason.Reason for absence_name]' role='dimension' type='nominal' />
+            <column-instance column='[Reason.Reason for absence_name]' derivation='Count' name='[cnt:Reason.Reason for absence_name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reason.Reason for absence_name]' derivation='None' name='[none:Reason.Reason for absence_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason.Reason for absence_name]' derivation='Count' name='[pcto:cnt:Reason.Reason for absence_name:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Reason.Reason for absence_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Reason.Reason for absence_name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:Reason.Reason for absence_name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Reason.Reason for absence_name:nk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[pcto:cnt:Reason.Reason for absence_name:qk]</cols>
+      </table>
+      <simple-id uuid='{725CFA68-9FA4-4CCF-AD4C-D289C0908E89}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5BD2E970-7BB8-43AA-9604-7D58828805C9}' />
+    </worksheet>
+    <worksheet name='Workload Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Main (Preped) (Absenteeism_at_work)' name='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8'>
+            <column aggregation='None' datatype='integer' name='[Work load Average/day (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='4' formula='[Work load Average/day]' peg='0' size='15320' />
+            </column>
+            <column datatype='integer' name='[Work load Average/day]' role='measure' type='quantitative' />
+            <column-instance column='[Work load Average/day]' derivation='Count' name='[cnt:Work load Average/day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Work load Average/day (bin)]' derivation='None' name='[none:Work load Average/day (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[cnt:Work load Average/day:qk]</rows>
+        <cols>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:Work load Average/day (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[Work load Average/day (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EF61EC58-3251-45CC-8BFB-71EA3D760036}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Workload Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03B004A0-7829-4AC7-AF11-A80CDF0FB600}' />
+    </window>
+    <window class='worksheet' name='Age Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1dh4tcv0d4eo6f1cbspmi1w5nxj8].[none:ID:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C327ECE1-9502-4F8F-91A5-31882B3305AC}' />
+    </window>
+    <window class='worksheet' name='BMI Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EA9B00BC-BE93-4A49-B297-303AB36DE231}' />
+    </window>
+    <window class='worksheet' name='Distance Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45AE4211-2A0D-4DA4-8FD3-37B625DAF273}' />
+    </window>
+    <window class='worksheet' name='Most Absence Employee'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5A03638C-CFE3-4241-B26D-02F4FE08042A}' />
+    </window>
+    <window class='worksheet' name='Most Reason for Absence'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9CE0754F-21A8-4A7F-A4E5-C26DC5BE3136}' />
+    </window>
+    <window class='worksheet' name='Most Absence day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A28432A5-636F-4202-A113-4E281A4D5A18}' />
+    </window>
+    <window class='worksheet' name='Most Absence Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{06948D28-5002-4FAE-B4DE-AA4942A477A8}' />
+    </window>
+    <window class='worksheet' name='Most Absence month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F2C0C0FE-9B21-498D-BDC9-EDE2812C2EC9}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0AF3BB70-57A0-448D-AFEC-748741DB1A84}' />
+    </window>
+  </windows>
+</workbook>
