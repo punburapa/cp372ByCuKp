@@ -1,6 +1,8 @@
 # cp372ByCuKp
  Data Analytic project about Human Resource
 
+ Tableau Public Link : ![Click Here](https://public.tableau.com/shared/NGX7YFFFF?:display_count=n&:origin=viz_share_link)
+
 **Problem Statement:** เนื่องจากบริษัทมีปัญหาการขาดงาน ซึ่งมีผลมาจากหลายปัญจัยเช่น ค่าใช้จ่ายในการเดินทาง ระยะทาง หรือในด้านสุขภาพที่อาจส่งผล ทำให้จำเป็นต้อง
 วิเคราะห์สาเหตุการขาดงาน และนำมาปรับใช้เพื่อแก้ไขปัญหานี้
 
@@ -29,5 +31,7 @@ Seasons : summer (1), autumn (2), winter (3), spring (4)
 
 ![Missing Data in DataCleaning](/assets//image/Data%20Cleaning1.png)
 
-มีMissing ที่เกิดจาก ไม่ได้ระบุ Reason of Absence ไว้ จึงไม่มี Absence name
+มี Missing data ที่ Column "Reason.Reason for absence_name" ที่เกิดจาก ไม่ได้ระบุ Reason of Absence ไว้ จึงไม่มี Absence name
 ไม่ส่งผลต่อการวิเคราะห์ข้อมูล จึงไม่จำเป็นต้องลงมือใดๆ
+
+
