@@ -1,9 +1,9 @@
 # cp372ByCuKp
  Data Analytic project about Human Resource
 
- Tableau Public Link : [Click Here](https://public.tableau.com/shared/NGX7YFFFF?:display_count=n&:origin=viz_share_link)
+ Tableau Public: [Click Here](https://public.tableau.com/shared/NGX7YFFFF?:display_count=n&:origin=viz_share_link)
 
- Presentation Link: [Click Here]()
+ Presentation Video: [Click Here]()
 
 ## Project Canvas
 ![Project Canvas](/assets/image/Project%20Canvas.jpg)
@@ -57,22 +57,22 @@
   - Wednesday (4)
   - Thursday (5)
   - Friday (6)
-  - saturday(7)
+  - Saturday(7)
 - **Seasons :** 
-  - summer (1)
-  - autumn (2)
-  - winter (3)
-  - spring (4)
+  - Summer (1)
+  - Autumn (2)
+  - Winter (3)
+  - Spring (4)
 - **Transportation expense:** ค่าใช้จ่ายในการเดินทางต่อเดือน
 - **Distance from Residence to Work:** ระยะทางจากที่พักถึงที่ทำงาน (Km)
 - **Service time:** จำนวนปีที่ทำงานกับบริษัทมา
 - **Hit target:** เป้าหมายที่ทำได้
 - **Disciplinary failure:** มีความผิดทางวินัยหรือไม่
 - **Education:** 
-  - high school (1)
-  - graduate (2)
-  - postgraduate (3)
-  - master and doctor (4)
+  - High school (1)
+  - Graduate (2)
+  - Postgraduate (3)
+  - Master and Doctor (4)
 - **Social drinker:** พนักงานคนนั้นเป็นคนดื่มเข้าสังคมหรือไม่
 - **Social smoker:** พนักงานคนนั้นเป็นคนสูบบุหรี่เข้าสังคมหรือไม่
 - **Pet:** จำนวนสัตว์เลี้ยงที่พนักงานนั้นมี
@@ -86,3 +86,44 @@
 ไม่ส่งผลต่อการวิเคราะห์ข้อมูล จึงไม่จำเป็นต้องลงมือใดๆ
 
 
+### Feature Engineering
+
+Level of drug addiction : คือ Social drinker + Social Smoker 
+
+![Level of drug addiction Formula](/assets/image/Level%20of%20drug%20addiction%20Formula.png)
+
+Age Enter Company : อายุที่เข้าทำงานกับบริษัท
+
+![Age Enter Company Formula](/assets/image/Level%20of%20drug%20addiction%20Formula.png)
+
+### Tableau Preparation
+เปลี่ยนประเภทของข้อมูลใน Column เหล่านี้ให้เป็น String
+- Social Drinker
+- Social Smoker
+- Level of drug addiction
+
+![Tableau Preparation](/assets/image/Tableau%20Preparation.png)
+
+## Exploratory Data Analysis (EDA)
+### Distribution
+
+>Distribution จะสามารถ bias ได้ เนื่องจากเป็นข้อมูลการลา ซึ่งไม่ใช่ข้อมูลของพนักงานทั้งหมด
+
+Workload Distribution
+
+![Workload Distribution](/assets/image/Workload%20Distribution.png)
+
+
+Age Distribution
+
+![Age Distribution](/assets/image/Age%20Distribution.png)
+
+
+BMI Distribution
+
+![BMI Distribution](/assets/image/BMI%20Distribution.png)
+
+
+Distance from Residence to Work Distribution
+
+![Distance from Residence to Work Distribution](/assets/image/Distance%20from%20Residence%20to%20Work%20Distribution.png)
