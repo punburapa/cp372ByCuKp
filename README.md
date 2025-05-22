@@ -1,9 +1,17 @@
 # cp372ByCuKp
  Data Analytic project about Human Resource
 
+ สมาชิกกลุ่ม
+
+1. กฤตภัค พิมพ์จุฬา 65102010012\
+2. ชินาวี อุดมสมบูรณ์ 65102010111\
+3. บูรพา ยืนยง 65102010418
+
  Tableau Public: [Click Here](https://public.tableau.com/shared/NGX7YFFFF?:display_count=n&:origin=viz_share_link)
 
- Presentation Video: [Click Here]()
+ Presentation Video: [Click Here](https://youtu.be/u4NVEeT8qcE?si=g9vCKkS_aKGM6vHp)
+
+
 
 ## Project Canvas
 ![Project Canvas](/assets/image/Project%20Canvas.jpg)
@@ -19,11 +27,9 @@
 
 **Timeline**
 
-วันที่ 1 ทำความเข้าใจข้อมูล ตรวจสอบ missing data ที่จำเป็นต้องแก้ไข
-
-วันที่ 2-3 ทำ EDA สร้างกราฟเพื่อดูข้อมูลเชิงลึกหาสาเหตุของการลา
-วันที่ 4 วิเคราะห์ผลและตั้งสมมติฐานของสาเหตุการลาเบื้องต้น
-
+วันที่ 1 ทำความเข้าใจข้อมูล ตรวจสอบ missing data ที่จำเป็นต้องแก้ไข\
+วันที่ 2-3 ทำ EDA สร้างกราฟเพื่อดูข้อมูลเชิงลึกหาสาเหตุของการลา\
+วันที่ 4 วิเคราะห์ผลและตั้งสมมติฐานของสาเหตุการลาเบื้องต้น\
 วันที่ 5 สรุป Insight เสนอแนะวิธีการแก้ปัญหาการลาแล้วจึงจัดทำรายงาน
 
 ## Data Dictionary
@@ -188,24 +194,52 @@ Friday
 
 ### จำนวนครั้งที่ลา และชั่วโมงรวมที่ลาไป ส่งผลกับประสิทธิภาพการทำงานหรือเปล่า
 
-![Worker Efficiency by Hit Target](/assets/image/Worker%20Efficiency%20by%20Hit%20Target.png)
 
 พบว่าไม่มีการส่งผลกันอย่างเห็นได้ชัด
 
-![Worker Efficiency by Hit Target with Education](/assets/image/Worker%20Efficiency%20by%20Hit%20Target%20with%20Education.png)
+![Worker Efficiency by Hit Target](/assets/image/Worker%20Efficiency%20by%20Hit%20Target.png)
 
 ระดับการศึกษานั้นมีข้อมูลไม่เพียงพอที่จะสรุปได้ว่าส่งผลกับการทำงาน
 
+![Worker Efficiency by Hit Target with Education](/assets/image/Worker%20Efficiency%20by%20Hit%20Target%20with%20Education.png)
+
+
+เช่นเดียวกันกับการดื่มสุราหรือสูบบุหร
+
 ![10](/assets/image/10.jpg)
 
-เช่นเดียวกันกับการดื่มสุราหรือสูบบุหรี่
-![11](/assets/image/11.jpg)
-
+ี่
 การเลี้ยงสัตว์
 
-![12](/assets/image/12.jpg)
+![11](/assets/image/11.jpg)
+
 
 และการเลี้ยงลูก
 
+![12](/assets/image/12.jpg)
 
+
+เราจึงสนใจสาเหตุการลาหลักๆที่มาจากเรื่องสุขภาพ
+
+![13](/assets/image/13.jpg)
+
+ตัวอย่างเช่น พนักงานหมายเลข 3 ลาไปกายภาพบำบัดถึง 38 ครั้ง คิดรวมกันเป็น 97 ชั่วโมง
+
+![14](/assets/image/14.jpg)
+
+## Insight
+
+การลาไปปรึกษาแพทย์ หรือกายภาพบำบัดมีมาก แต่ใช้เวลาน้อย เฉลี่ยแล้วเพียง 3 ชั่วโมง โดยสามารถจบได้ภายในครึ่งวัน
+
+![15](/assets/image/15.jpg)
+
+
+14.81% ของชั่วโมงที่ลาไปทั้งหมดสามารถลดได้ด้วยการจัดสวัสดิการ ปรึกษาแพทย์ และทันตแพทย์ ที่ Office
+
+![16](/assets/image/16)
+
+
+19.49% ของชั่วโมงที่ลาจากสาเหตุสุขภาพกล้ามเนื้อสามารถลดได้ด้วยการเพิ่มสวัสดิการด้านสุขภาพ เช่น กายภาพบำบัดฟรีในทุกๆเดือน
+
+![17](/assets/image/17.jpg)
 
