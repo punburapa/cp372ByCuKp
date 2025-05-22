@@ -13,9 +13,18 @@
 
 **Business Objectives:** ปรับโครงสร้างองกรณ์ เพื่อให้ผลงานจากแรงงานมีประสิทธิภาพต่องบประมาณการว่าจ้างมากที่สุด เพื่อหาสาเหตุที่ทำให้มีการลาเกิดขึ้น 
 
-**Key Stakeholders:** HR, Management Board
+**Key Stakeholders:** Human Resource, Management Board
 
 **Success metrics:** จำนวนการลาลดลง
+
+**Timeline**
+
+วันที่ 1 ทำความเข้าใจข้อมูล ตรวจสอบ missing data ที่จำเป็นต้องแก้ไข
+
+วันที่ 2-3 ทำ EDA สร้างกราฟเพื่อดูข้อมูลเชิงลึกหาสาเหตุของการลา
+วันที่ 4 วิเคราะห์ผลและตั้งสมมติฐานของสาเหตุการลาเบื้องต้น
+
+วันที่ 5 สรุป Insight เสนอแนะวิธีการแก้ปัญหาการลาแล้วจึงจัดทำรายงาน
 
 ## Data Dictionary
 
@@ -148,7 +157,7 @@ Percent of Absence from each Day in a Week
 
 
 ## In-Depth Analysis
-### เหตุผลการลาในแต่ละวัน
+### เหตุผลการลาในแต่ละวันมันลักษณะต่างกันอย่างไร
 
 Monday
 ![Monday](/assets/image/Monday.png)
@@ -167,3 +176,36 @@ Thursday
 
 Friday
 ![Friday](/assets/image/Friday.png)
+
+- วันจันทร์และวันศุกร์มีการลาแบบ unjustified ที่เด่น
+- สาเหตุการลาหลักส่วนใหญ่คือการปรึกษาแพทย์
+- มักลาไปกายภาพบำบัดในวัน พุธ พฤหัสบดี ศุกร์
+
+### คนที่ลาไปกายภาพบำบัดหรือมีปัญหาสุขภาพทางกล้ามเนื้อมีลักษระเด่นของอายุหรือไม่
+
+![Muscle age](/assets//image/Muscle%20age.png)
+
+
+### จำนวนครั้งที่ลา และชั่วโมงรวมที่ลาไป ส่งผลกับประสิทธิภาพการทำงานหรือเปล่า
+
+![Worker Efficiency by Hit Target](/assets/image/Worker%20Efficiency%20by%20Hit%20Target.png)
+
+พบว่าไม่มีการส่งผลกันอย่างเห็นได้ชัด
+
+![Worker Efficiency by Hit Target with Education](/assets/image/Worker%20Efficiency%20by%20Hit%20Target%20with%20Education.png)
+
+ระดับการศึกษานั้นมีข้อมูลไม่เพียงพอที่จะสรุปได้ว่าส่งผลกับการทำงาน
+
+![10](/assets/image/10.jpg)
+
+เช่นเดียวกันกับการดื่มสุราหรือสูบบุหรี่
+![11](/assets/image/11.jpg)
+
+การเลี้ยงสัตว์
+
+![12](/assets/image/12.jpg)
+
+และการเลี้ยงลูก
+
+
+
