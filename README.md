@@ -127,3 +127,43 @@ BMI Distribution
 Distance from Residence to Work Distribution
 
 ![Distance from Residence to Work Distribution](/assets/image/Distance%20from%20Residence%20to%20Work%20Distribution.png)
+
+
+### Bar Chart
+
+Absence time for each employee
+
+![Absence time for each employee](/assets/image/Absence%20time%20for%20each%20employee.png)
+
+
+Percent of Absence from each employee
+![Percent of Absence from each employee](/assets/image/Percent%20of%20Absence%20from%20each%20employee.png)
+
+
+Percent of Absence from each Reason
+![Percent of Absence from each Reason](/assets/image/Percent%20of%20Absence%20from%20each%20Reason.png)
+
+Percent of Absence from each Day in a Week
+![Percent of Absence from each Day in a Week](/assets/image/Percent%20of%20Absence%20from%20each%20Day%20in%20a%20Week.png)
+
+
+## In-Depth Analysis
+### เหตุผลการลาในแต่ละวัน
+
+Monday
+![Monday](/assets/image/Monday.png)
+
+
+Tuesday
+![Tuesday](/assets/image/Tuesday.png)
+
+
+Wednesday
+![Wednesday](/assets/image/Wednesday.png)
+
+
+Thursday
+![Thursday](/assets/image/Thursday.png)
+
+Friday
+![Friday](/assets/image/Friday.png)

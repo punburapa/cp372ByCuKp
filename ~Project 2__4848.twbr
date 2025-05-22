@@ -1050,10 +1050,13 @@
         <groupfilter function='level-members' level='[none:Education.2.Education_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
       </filter>
       <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]'>
-        <groupfilter function='member' level='[none:ID:ok]' member='3' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <groupfilter function='level-members' level='[none:ID:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
       </filter>
       <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]'>
-        <groupfilter function='level-members' level='[none:Reason.Reason for absence_name:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Reason.Reason for absence_name:nk]' />
+          <groupfilter function='member' level='[none:Reason.Reason for absence_name:nk]' member='&quot;unjustified absence&quot;' />
+        </groupfilter>
       </filter>
       <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]'>
         <groupfilter function='level-members' level='[none:Season.Seasons_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
@@ -1241,7 +1244,7 @@
             <column-instance column='[Absenteeism time in hours]' derivation='Sum' name='[sum:Absenteeism time in hours:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <manual-sort column='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]' direction='ASC'>
             <dictionary>
@@ -1343,7 +1346,7 @@
             <column-instance column='[Season.Seasons_name]' derivation='None' name='[none:Season.Seasons_name:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]</column>
@@ -1450,7 +1453,7 @@
             <column-instance column='[Season.Seasons_name]' derivation='None' name='[none:Season.Seasons_name:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]</column>
@@ -1568,7 +1571,7 @@
             </column-instance>
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]</column>
@@ -1629,7 +1632,7 @@
             </column-instance>
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]</column>
@@ -1769,7 +1772,7 @@
             </column-instance>
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <shelf-sorts>
             <shelf-sort-v2 dimension-to-sort='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0xk9yr601xxl98182do6o1h87uvd].[cnt:Reason.Reason for absence_name:qk]' shelf='rows' />
@@ -1881,8 +1884,6 @@
             <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
             <column caption='Reason_txt' datatype='string' name='[Reason.Reason for absence_name]' role='dimension' type='nominal' />
             <column caption='Season' datatype='string' name='[Season.Seasons_name]' role='dimension' type='nominal' />
-            <column datatype='integer' name='[Service time]' role='measure' type='quantitative' />
-            <column-instance column='[Service time]' derivation='Avg' name='[avg:Service time:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Day in a Week.Day of the week_name]' derivation='None' name='[none:Day in a Week.Day of the week_name:nk]' pivot='key' type='nominal' />
             <column-instance column='[Education.2.Education_name]' derivation='None' name='[none:Education.2.Education_name:nk]' pivot='key' type='nominal' />
             <column-instance column='[ID]' derivation='None' name='[none:ID:ok]' pivot='key' type='ordinal' />
@@ -1957,7 +1958,6 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.0xk9yr601xxl98182do6o1h87uvd].[avg:Service time:qk]' />
               <text column='[federated.0xk9yr601xxl98182do6o1h87uvd].[pcto:cnt:ID:qk]' />
             </encodings>
             <style>
@@ -2611,7 +2611,7 @@
             <column-instance column='[Work load Average/day (bin)]' derivation='None' name='[none:Work load Average/day (bin):qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0xk9yr601xxl98182do6o1h87uvd].[Action (Month_txt)]'>
-            <groupfilter function='member' level='[Month.Column2]' member='&quot;February&quot;' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[Month.Column2]' user:ui-action-filter='[Action1_6A0882F93C4A4B44A59C35932F1C1554]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]</column>
@@ -2666,9 +2666,9 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98110' id='9' param='horz' type-v2='layout-flow' w='97858' x='1071' y='945'>
-            <zone h='98110' id='7' type-v2='layout-basic' w='76439' x='1071' y='945'>
-              <zone h='49055' id='5' name='Age Distribution' w='12361' x='1071' y='945'>
+          <zone h='98206' id='9' param='horz' type-v2='layout-flow' w='99064' x='468' y='897'>
+            <zone h='98206' id='7' type-v2='layout-basic' w='89702' x='468' y='897'>
+              <zone h='49103' id='5' name='Age Distribution' w='14505' x='468' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2676,7 +2676,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='13' name='Workload Distribution' w='30870' x='46640' y='945'>
+              <zone h='49103' id='13' name='Workload Distribution' w='36227' x='53943' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2684,7 +2684,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='14' name='Distance from Residence to Workplace Distribution' w='10470' x='13432' y='945'>
+              <zone h='49103' id='14' name='Distance from Residence to Workplace Distribution' w='12287' x='14973' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2692,7 +2692,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='15' name='Percent of Absence from each Month' w='38225' x='39285' y='50000'>
+              <zone h='49103' id='15' name='Percent of Absence from each Month' w='44858' x='45312' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2700,7 +2700,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='17' name='Percent of Absence from each Drug addicted level' w='8278' x='23902' y='945'>
+              <zone h='49103' id='17' name='Percent of Absence from each Drug addicted level' w='9714' x='27260' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2708,7 +2708,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='18' name='Percent of Absence from each Reason' w='38214' x='1071' y='50000'>
+              <zone h='49103' id='18' name='Percent of Absence from each Reason' w='44844' x='468' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2716,7 +2716,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='21' name='Percent of Absence from each Education' w='7230' x='39410' y='945'>
+              <zone h='49103' id='21' name='Percent of Absence from each Education' w='8484' x='45459' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2724,7 +2724,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49055' id='22' name='Absenteeism time' w='7230' x='32180' y='945'>
+              <zone h='49103' id='22' name='Absenteeism time' w='8485' x='36974' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2733,8 +2733,8 @@
                 </zone-style>
               </zone>
             </zone>
-            <zone fixed-size='160' h='98110' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='21419' x='77510' y='945'>
-              <zone h='6140' id='10' mode='dropdown' name='Age Distribution' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]' type-v2='filter' w='21419' x='77510' y='945'>
+            <zone fixed-size='160' h='98206' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='897'>
+              <zone h='6390' id='10' mode='dropdown' name='Age Distribution' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]' type-v2='filter' w='9362' x='90170' y='897'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2742,7 +2742,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='17238' id='11' name='Age Distribution' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]' type-v2='filter' w='21419' x='77510' y='7085'>
+              <zone h='18386' id='11' name='Age Distribution' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]' type-v2='filter' w='9362' x='90170' y='7287'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2750,7 +2750,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='48875' id='12' name='Age Distribution' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]' type-v2='filter' w='21419' x='77510' y='24323'>
+              <zone h='46636' id='12' name='Age Distribution' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]' type-v2='filter' w='9362' x='90170' y='25673'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2758,7 +2758,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='8855' id='16' mode='slider' name='Percent of Absence from each Month' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]' type-v2='filter' w='21419' x='77510' y='73198'>
+              <zone h='9529' id='16' mode='slider' name='Percent of Absence from each Month' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]' type-v2='filter' w='9362' x='90170' y='72309'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2766,7 +2766,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='8147' id='19' name='Percent of Absence from each Reason' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Distance from Residence to Work (bin):qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='21419' x='77510' y='82053'>
+              <zone h='7736' id='19' name='Percent of Absence from each Reason' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Distance from Residence to Work (bin):qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9362' x='90170' y='81838'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2774,7 +2774,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='8855' id='20' mode='slider' name='Percent of Absence from each Reason' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]' type-v2='filter' w='21419' x='77510' y='90200'>
+              <zone h='9529' id='20' mode='slider' name='Percent of Absence from each Reason' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]' type-v2='filter' w='9362' x='90170' y='89574'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2966,13 +2966,13 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='13' />
+      <active id='15' />
       <simple-id uuid='{49CD7580-FD41-49D0-8471-CD2BFDACE446}' />
     </window>
     <window class='worksheet' name='Workload Distribution' tab-color='#dec77b'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -2985,7 +2985,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
@@ -3054,7 +3054,7 @@
       </viewpoint>
       <simple-id uuid='{F80C764E-DD7B-4E2D-9BE4-360FF9F7047A}' />
     </window>
-    <window class='worksheet' maximized='true' name='Distance from Residence to Workplace Distribution' tab-color='#dec77b'>
+    <window class='worksheet' name='Distance from Residence to Workplace Distribution' tab-color='#dec77b'>
       <cards>
         <edge name='left'>
           <strip size='200'>
@@ -3070,7 +3070,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='38'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
@@ -3080,7 +3080,7 @@
     <window class='worksheet' name='Percent of Absence from each employee' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3093,14 +3093,8 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='300'>
-            <card param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]' type='filter' />
-            <card pane-specification-id='0' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[avg:Service time:qk]' type='color' />
           </strip>
         </edge>
       </cards>
@@ -3112,7 +3106,7 @@
     <window class='worksheet' name='Absence time for each employee' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3125,13 +3119,8 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='300'>
-            <card param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]' type='filter' />
           </strip>
         </edge>
       </cards>
@@ -3140,10 +3129,10 @@
       </viewpoint>
       <simple-id uuid='{09B6613A-4086-45F6-9833-C20C5FB07CF2}' />
     </window>
-    <window class='worksheet' name='Percent of Absence from each Reason' tab-color='#f66273'>
+    <window class='worksheet' maximized='true' name='Percent of Absence from each Reason' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3156,12 +3145,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='200'>
             <card mode='dropdown' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]' type='filter' />
             <card mode='slider' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]' type='filter' />
             <card mode='slider' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]' type='filter' />
@@ -3176,25 +3165,26 @@
     <window class='worksheet' name='Percent of Absence from each Day in a Week' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='38'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='200'>
+            <card param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Reason.Reason for absence_name:nk]' type='filter' />
             <card param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Day in a Week.Day of the week_name:nk]' type='filter' />
           </strip>
         </edge>
@@ -3207,7 +3197,7 @@
     <window class='worksheet' name='Percent of Absence from each Season' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3220,7 +3210,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
@@ -3233,7 +3223,7 @@
     <window class='worksheet' name='Percent of Absence from each Drug addicted level' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3246,7 +3236,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
@@ -3259,7 +3249,7 @@
     <window class='worksheet' name='Percent of Absence from each Month' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3272,12 +3262,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='200'>
             <card param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Month.Column2:nk]' type='filter' />
             <card param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:ID:ok]' type='filter' />
             <card mode='slider' param='[federated.0xk9yr601xxl98182do6o1h87uvd].[none:Season.Seasons_name:nk]' type='filter' />
@@ -3292,7 +3282,7 @@
     <window class='worksheet' name='Percent of Absence from each Education' tab-color='#f66273'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='200'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3305,7 +3295,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
