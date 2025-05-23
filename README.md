@@ -204,7 +204,7 @@ Friday
 ![Worker Efficiency by Hit Target with Education](/assets/image/Worker%20Efficiency%20by%20Hit%20Target%20with%20Education.png)
 
 
-เช่นเดียวกันกับการดื่มสุราหรือสูบบุหร
+เช่นเดียวกันกับการดื่มสุราหรือสูบบุหรี่
 
 ![10](/assets/image/10.jpg)
 
